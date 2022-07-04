@@ -1,157 +1,234 @@
-
-
-
-.title img{
-    width: 45%;
+.title img {
+  width: 45%;
 }
 
+a,
+button {
+  cursor: pointer;
+}
 /*Container*/
 
-#container{
-width: 365px;
-margin: auto;
-font-family: 'Roboto', sans-serif;
-font-size: large;
+#container {
+  width: 365px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
 }
 
 /*Header*/
 /*Presentation Welcome Page*/
 
-#presentation_welcome_page{
-
+#presentation_welcome_page {
+  display: flex;
+  flex-wrap: wrap;
 }
-#presentation_welcome_page button{
-    border: 1px solid #9356DC;
-    width: 220px;
-    height: 45px;
-    border-radius: 30px;
-    background: linear-gradient(#9356DC, #FF79DA);
-    color: white;
-    box-shadow: 1px 1px 1px 1px gray;
+#presentation_welcome_page button {
+  border: 1px solid #9356dc;
+  width: 220px;
+  height: 45px;
+  border-radius: 30px;
+  background: linear-gradient(#9356dc, #ff79da);
+  color: white;
+  box-shadow: 1px 1px 1px 1px gray;
 }
-#presentation_welcome_page button:hover{
-    transform:scale(1.08)
+#presentation_welcome_page button:hover {
+  transform: scale(1.08);
 }
-.title{
-
+#presentation_welcome_page button:focus {
+  background: linear-gradient(#8a52ce, #cc65af);
+}
+.title {
+  text-align: center;
+  margin: 15px auto 5px;
 }
 
-.localisation{
+.localisation {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  background: lightgray;
+  align-items: center;
+  border-top: 2px solid #b5b5b5;
 
+  i {
+    padding-right: 20px;
+  }
 }
 
-.reserve_and_research{
+.reserve_and_research {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f2f2;
 
+  h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 40px;
+  }
 }
 
 /*Presentation Welcome Page End*/
 /*Header End*/
 
-
-
 /*Menu*/
 
-.menu{
-
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.title_menu {
+    margin-left: 15px;
 }
 
-.title_menu{
+.button_menu {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 15px;
 
+    li{
+        margin-bottom: 20px;
+    }
+}
+.button_menu_child {
+    display: flex;
+    width: 340px;
+    height: 65px;
+    border: 0px solid #f2f2f2;
+    border-radius: 25px;
+    background: #f2f2f2;
+    box-sizing: content-box;
+    box-shadow: 0px 1px 5px 0px gray;
 }
 
+.number_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #6a2cb5;
+    border-radius: 100%;
+    color: white;
+    background: #6a2cb5;
+    position: relative;
+    right: 15px;
+}
+.content_button{
+    display: flex;
+    align-items: center;
+
+    i{
+        margin-right: 20px;
+    }
+}
+
+li :hover{
+    background-color: #eedfff;
+    transition: 2.5s;
+}
+li :focus{
+    background-color: #eedfff;
+}
 /*Menu End*/
 
 /* Flexible_Welcome_Page_Restaurant_Section */
 
-#restaurants{
-    width: 100%;
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-
+#restaurants {
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
-.restaurant_title{
-    margin-left: 25px;
+.restaurant_title {
+  margin-left: 25px;
 }
-article{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.restaurant_card
-{
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 1px 1px 1px 1px black;
-    width: 95%;
-    height: 230px;
-    margin: 15px;
-}
-figure img{
-    width: 100%;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-    height: 70%;
+article {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.content_restaurant_card{
-    display: flex;
-    justify-content: space-between;
-    margin: 15px;
+.restaurant_card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px black;
+  width: 95%;
+  height: 230px;
+  margin: 15px;
 }
-.information_restaurant{
-
-
-}
-
-.restaurant_name{
-    font-weight: 900;
-}
-.restaurant_localisation{
-    font-weight: 300;
-}
-
-.like_button{
-
+figure img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  height: 70%;
 }
 
-figure i{
-    margin-top: 5px;
-    font-size: x-large;
+.content_restaurant_card {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
 }
-figure i:hover{
-    color: #9356DC;
-    font-weight: bold;
+.information_restaurant {
+}
+
+.restaurant_name {
+  font-weight: 900;
+}
+.restaurant_localisation {
+  font-weight: 300;
+}
+
+.like_button {
+}
+
+figure i {
+  margin-top: 5px;
+  font-size: x-large;
+}
+figure i:hover {
+  color: #9356dc;
+  font-weight: bold;
 }
 /* Flexible_Welcome_Page_Restaurant_Section */
-
 
 /*Container End*/
 
 /*Footer*/
 
-footer{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: auto;
-    background-color: dimgray;
-    color:whitesmoke
-
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  background-color: dimgray;
+  color: whitesmoke;
 }
-.content_footer{
-    display: flex;
-    flex-direction: column;
-    width: 368px;
-    margin-left: 25px;
+.content_footer {
+  display: flex;
+  flex-direction: column;
+  width: 368px;
+  margin-left: 25px;
 }
-.title_footer{
-    font-family: 'Shrikhand', cursive;
+.title_footer {
+  font-family: "Shrikhand", cursive;
 }
-footer nav ul{
-    list-style: none;
-    padding-left: 0px;
+footer nav ul {
+  list-style: none;
+  padding-left: 0px;
 }
 /*Footer*/

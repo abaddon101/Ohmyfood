@@ -99,6 +99,22 @@ button {
 .button_menu li {
   margin-bottom: 20px;
 }
+.button_menu li :hover {
+  background-color: #eedfff;
+  transition: 1.5s;
+}
+.button_menu li :hover i {
+  color: #6a2cb5;
+  transition: 1.5s;
+}
+.button_menu li :focus {
+  background-color: #eedfff;
+  transition: 1.5s;
+}
+.button_menu li :focus i {
+  color: #6a2cb5;
+  transition: 1.5s;
+}
 
 .button_menu_child {
   display: flex;
@@ -132,15 +148,6 @@ button {
 }
 .content_button i {
   margin-right: 20px;
-}
-
-li :hover {
-  background-color: #eedfff;
-  transition: 2.5s;
-}
-
-li :focus {
-  background-color: #eedfff;
 }
 
 /*Menu End*/

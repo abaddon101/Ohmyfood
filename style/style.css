@@ -54,6 +54,7 @@ button {
   align-items: center;
   border-top: 2px solid #b5b5b5;
 }
+
 .localisation i {
   padding-right: 20px;
 }
@@ -64,15 +65,18 @@ button {
   justify-content: center;
   background-color: #f2f2f2;
 }
+
 .reserve_and_research h2 {
   text-align: center;
   margin-bottom: 0px;
   padding-right: 30px;
   padding-left: 30px;
 }
+
 .reserve_and_research p {
   text-align: center;
 }
+
 .reserve_and_research form {
   display: flex;
   justify-content: center;
@@ -96,21 +100,26 @@ button {
   padding: 0;
   margin-left: 15px;
 }
+
 .button_menu li {
   margin-bottom: 20px;
 }
+
 .button_menu li :hover {
   background-color: #eedfff;
   transition: 1.5s;
 }
+
 .button_menu li :hover i {
   color: #6a2cb5;
   transition: 1.5s;
 }
+
 .button_menu li :focus {
   background-color: #eedfff;
   transition: 1.5s;
 }
+
 .button_menu li :focus i {
   color: #6a2cb5;
   transition: 1.5s;
@@ -146,6 +155,7 @@ button {
   display: flex;
   align-items: center;
 }
+
 .content_button i {
   margin-right: 20px;
 }
@@ -169,6 +179,7 @@ article {
 }
 
 .restaurant_card {
+  position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -179,12 +190,31 @@ article {
   margin: 15px;
 }
 
-figure img {
+.restaurant_card_header {
+  height: 70%;
+}
+
+.legend_image {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 25px;
+  border: 2px solid #7acac3;
+  background: #7acac3;
+  color: #0f6f0f;
+  font-weight: 400;
+}
+
+.restaurant_card img {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 70%;
+  height: 100%;
 }
 
 .content_restaurant_card {
@@ -201,12 +231,12 @@ figure img {
   font-weight: 300;
 }
 
-figure i {
+.restaurant_card i {
   margin-top: 5px;
   font-size: x-large;
 }
 
-figure i:hover {
+.restaurant_card i:hover {
   color: #9356dc;
   font-weight: bold;
 }
@@ -239,4 +269,5 @@ footer nav ul {
   padding-left: 0px;
 }
 
-/*Footer*//*# sourceMappingURL=style.css.map */
+/*Footer*/
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

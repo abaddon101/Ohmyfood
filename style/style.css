@@ -176,6 +176,14 @@ button {
 article {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.links_card {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 30px;
 }
 
 .restaurant_card {
@@ -185,9 +193,8 @@ article {
   border-radius: 20px;
   background-color: white;
   box-shadow: 1px 1px 1px 1px black;
-  width: 95%;
+  width: 100%;
   height: 230px;
-  margin: 15px;
 }
 
 .restaurant_card_header {
@@ -259,6 +266,15 @@ footer {
   flex-direction: column;
   width: 368px;
   margin-left: 25px;
+  margin-top: 25px;
+}
+
+.proposition_list_1 i {
+  margin-right: 14px;
+}
+
+.proposition_list_2 i {
+  margin-right: 8px;
 }
 
 .title_footer {
@@ -268,6 +284,9 @@ footer {
 footer nav ul {
   list-style: none;
   padding-left: 0px;
+}
+footer nav ul li {
+  margin-bottom: 5px;
 }
 
 /*Footer*/

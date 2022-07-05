@@ -221,7 +221,7 @@ article {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
 }
 
@@ -290,4 +290,4 @@ footer nav ul li {
 }
 
 /*Footer*/
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */ /*# sourceMappingURL=style.css.map */

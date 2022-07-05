@@ -103,11 +103,15 @@ button {
 
 .button_menu li {
   margin-bottom: 20px;
+  box-shadow: 0px 1px 5px 0px gray;
+  border-radius: 25px;
 }
 
 .button_menu li :hover {
   background-color: #eedfff;
-  transition: 1.5s;
+}
+.button_menu li :hover .number_button {
+  background-color: #6a2cb5;
 }
 
 .button_menu li :hover i {
@@ -133,7 +137,6 @@ button {
   border-radius: 25px;
   background: #f2f2f2;
   box-sizing: content-box;
-  box-shadow: 0px 1px 5px 0px gray;
 }
 
 .number_button {
@@ -154,6 +157,7 @@ button {
 .content_button {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .content_button i {
@@ -221,7 +225,7 @@ article {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: 100%;
 }
 
@@ -239,14 +243,19 @@ article {
   font-weight: 300;
 }
 
-.restaurant_card i {
+.like_button i {
   margin-top: 5px;
   font-size: x-large;
 }
 
-.restaurant_card i:hover {
-  color: #9356dc;
+.like_button i:hover {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(#cc65af, #8a52ce);
   font-weight: bold;
+  scale: 1.08;
+  transition: 1.5s;
 }
 
 /* Flexible_Welcome_Page_Restaurant_Section */
@@ -290,4 +299,4 @@ footer nav ul li {
 }
 
 /*Footer*/
-/*# sourceMappingURL=style.css.map */ /*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

@@ -12,6 +12,7 @@ button {
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-size: large;
+  text-decoration: dashed;
 }
 
 /*Header*/
@@ -126,7 +127,7 @@ button {
 
 .button_menu_child {
   display: flex;
-  width: 320px;
+  width: 285px;
   height: 65px;
   border: 0px solid #f2f2f2;
   border-radius: 25px;
@@ -171,17 +172,17 @@ button {
   margin-left: 25px;
 }
 
-article {
+.flexible_welcome_page_restaurant_section {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .links_card {
   width: 100%;
   text-decoration: none;
   color: black;
-  margin: 10px 10px 20px 10px;
+  margin: 10px 10px 30px 10px;
 }
 
 .restaurant_card {

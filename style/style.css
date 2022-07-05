@@ -112,7 +112,7 @@ button {
   background-color: #eedfff;
   border-radius: 25px;
 }
-.button_menu li :hover .number_button {
+.button_menu li :hover .number_buton {
   background-color: #6a2cb5;
 }
 
@@ -142,7 +142,7 @@ button {
   box-sizing: content-box;
 }
 
-.number_button {
+.number_bubble {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,13 +157,13 @@ button {
   right: 15px;
 }
 
-.content_button {
+.choose_compose_enjoy {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.content_button i {
+.choose_compose_enjoy i {
   margin-right: 20px;
 }
 
@@ -228,7 +228,7 @@ article {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
 }
 
@@ -254,7 +254,7 @@ article {
 .like_button i:hover {
   color: transparent;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   background-image: linear-gradient(#cc65af, #8a52ce);
   font-weight: bold;
   scale: 1.08;
@@ -328,4 +328,4 @@ footer nav ul li {
   }
 }
 /*Footer*/
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */ /*# sourceMappingURL=style.css.map */

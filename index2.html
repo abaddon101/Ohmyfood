@@ -1,22 +1,139 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/normalize.css">
-    <title>Ohmyfood</title>
-    <script src="https://kit.fontawesome.com/1bac0f66c4.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style2.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <title>Ohmyfood/la palette du gout</title>
+    <script
+      src="https://kit.fontawesome.com/1bac0f66c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div id="title"><h1>Ohmyfood</h1></div>
+      <!--Presentation Welcome Page-->
+      <div id="presentation_welcome_page">
+        <div class="title_page">
+          <img src="images/logo/ohmyfood.png" alt="logo_oh_my_food" />
+        </div>
+        <div class="background_welcome_page">
+          <img
+            src="images/restaurants/La_palette_du_gout.jpg"
+            alt="La_palette_du_goût"
+          />
+        </div>
+      </div>
+      <!--Presentation Welcome Page End-->
     </header>
-</body>
+    <div id="container">
+      <!--Menu-->
+
+      <section class="Presentation_restaurant">
+        <div class="title_section"><h2>La Palette du goût</h2></div>
+        <!--Menu Entrées-->
+        <article>
+          <div class="article_title"><h2>ENTRÉES</h2></div>
+          <nav>
+            <ul>
+              <li class="menu_list">
+                <div class="title_list">Fricassée d'escargot</div>
+                <div class="content_list">
+                  Au piment d'espelette
+                  <span class="price">25€</span>
+                </div>
+              </li>
+
+              <li class="menu_list">
+                <div class="title_list">Foie gras de canard mi-cuit</div>
+                <div class="content_list">Et ses copeaux de truffe noire</div>
+                <span class="price">35€</span>
+              </li>
+
+              <li class="menu_list">
+                <div class="title_list">Oeuf au plat</div>
+                <div class="content_list">
+                  Assaisonné à la truffe sur lit de...
+                </div>
+                <span class="price">20€</span>
+              </li>
+            </ul>
+          </nav>
+        </article>
+        <!--Menu Entrées End-->
+        <!--Menu Plats-->
+        <article>
+          <div class="article_title"><h2>PLATS</h2></div>
+          <nav>
+            <ul>
+              <li class="menu_list">
+                Filet de boeuf aux herbes Accompagné de se ribambelle de légu...
+                40€
+              </li>
+              <li class="menu_list">
+                Parmentier de queue de boeuf À la truffe noire sur sa purée de
+                panais 35€
+              </li>
+              <li class="menu_list">Filet de Turbot Aux agrumes 44€</li>
+            </ul>
+          </nav>
+        </article>
+        <!--Menu Plats End-->
+        <!--Menu Plats Desserts-->
+        <article>
+          <div class="article_title"><h2>DESSERT</h2></div>
+          <nav>
+            <ul>
+              <li class="menu_list">Paris-Brest Revisité 18€</li>
+              <li class="menu_list">
+                Macaron au chocolat d'exception Et la glace à la vanille de
+                Madagascar 22€
+              </li>
+              <li class="menu_list">
+                Mousse au chocolat Au piment d'espelette et à la truffe noire
+                23€
+              </li>
+            </ul>
+          </nav>
+        </article>
+        <!--Menu Plats Desserts End-->
+        <!--Delivery Buttton-->
+        <form method="get">
+          <button>Commander</button>
+        </form>
+        <!--Delivery Buttton-->
+      </section>
+      <!--Menu-->
+      <footer>
+        <div class="content_footer">
+          <div class="title_footer">Ohmyfood</div>
+          <nav class="others_links">
+            <ul>
+              <li class="proposition_list_1">
+                <i class="fa-solid fa-utensils"></i>Proposer un restaurant
+              </li>
+              <li class="proposition_list_2">
+                <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
+              </li>
+              <li>Mentions légales</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

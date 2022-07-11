@@ -23,9 +23,15 @@
 
   .title_page{
     display: flex;
-    justify-content: center;
     height: 40px;
     align-items: center;
+    justify-content: space-evenly;
+    margin-right: 75px;
+  }
+  .arrow_presentation_welcome_page{
+    text-decoration: none;
+    color: black;
+
   }
 
   .title_page img {
@@ -50,7 +56,23 @@
 
 
   /* Presentation_restaurant */
-  .Presentation_restaurant{
+  article{
+    width: 95%;
+    display: flex;
+    flex-flow: wrap column;
+  }
+  .article_title{
+   margin-left: 15px;
+
+    h4{
+        border-bottom: 3px solid #a7e6ce;
+        width: 45px;
+        padding-bottom: 5px;
+    }
+  }
+
+
+  .presentation_restaurant{
     margin-bottom: 25px;
     background: #f2f2f2;
     border-radius: 25px 25px 0px 0px;
@@ -58,22 +80,64 @@
     flex-wrap: wrap;
     position: relative;
     bottom: 25px;
+    border-radius: 20px;
+    nav{
+        width: 100%;
+    }
 
-    li{
+    .menu_list{
         background-color: white;
         margin-bottom: 15px;
-        border-radius: 10px;
-        height: 40px;
+        border-radius: 15px;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        flex-direction: column;
+        height: 70px;
+        box-shadow: 0px 0px 3px 0px gray;
     }
+
   }
-  .title_section h2 {
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
-    font-size: large;
-    margin-left: 25px;
+
+  .article_list{
+    width: 95%;
+    padding-left: 10px;
+  }
+  .title_section{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+        h2 {
+        font-family: "Shrikhand", cursive;
+        
+        font-size: large;
+        margin-left: 25px;
+    }
+  
+  }
+
+  .title_list{
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 17px;
+  }
+
+  .content_list{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 15px;
+    align-items: center;
+  }
+
+  .description_plate{
+    font-size: 14px;
+  }
+  .price{
+    font-size: 17px;
   }
 
   form button {

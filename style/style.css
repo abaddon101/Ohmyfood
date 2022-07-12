@@ -321,7 +321,6 @@ footer {
   body {
     width: 100%;
   }
-
   /*Menu*/
   .button_menu {
     display: flex;
@@ -329,40 +328,32 @@ footer {
     justify-content: space-evenly;
     width: 100%;
   }
-
   .button_menu li {
     margin-right: 15px;
   }
-
   .title_menu {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-
   /*Menu End*/
   /* Flexible_Welcome_Page_Restaurant_Section */
   .flexible_welcome_page_restaurant_section {
     justify-content: center;
   }
-
   .links_card {
     width: 100%;
   }
-
   .restaurant_card {
     flex-direction: row;
   }
-
   .restaurant_card_header {
     height: 100%;
     width: 100%;
   }
-
   .legend_image {
     left: 15px;
   }
-
   .restaurant_card img {
     width: 100%;
     border-radius: 20px 0px 0px 20px;
@@ -370,7 +361,6 @@ footer {
     object-fit: cover;
     height: 100%;
   }
-
   .content_restaurant_card {
     display: flex;
     justify-content: space-between;
@@ -381,7 +371,6 @@ footer {
     padding-left: 15px;
     padding-top: 10px;
   }
-
   .information_restaurant {
     display: flex;
     flex-direction: column;
@@ -390,33 +379,27 @@ footer {
     border-bottom: 1px solid #0087ff;
     padding-bottom: 15px;
   }
-
   .restaurant_name {
     margin-bottom: 15px;
   }
-
   .like_button {
     display: flex;
     justify-content: flex-end;
   }
-
   /* Flexible_Welcome_Page_Restaurant_Section End */
   /* Footer*/
   footer {
     flex-wrap: wrap;
     justify-content: initial;
   }
-
   .title_footer {
     text-align: center;
     width: 100%;
   }
-
   .content_footer {
     width: 100%;
     flex-wrap: wrap;
   }
-
   .others_links {
     display: flex;
     width: 80%;
@@ -429,7 +412,6 @@ footer {
   .others_links li {
     margin-right: 15px;
   }
-
   /* Footer End*/
 }
 /* screen >366px End*/
@@ -438,7 +420,6 @@ footer {
   body {
     width: 100%;
   }
-
   .links_card {
     width: 45%;
   }
@@ -449,5 +430,4 @@ footer {
     width: 100%;
   }
 }
-/*Footer*/
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+/*Footer*/ /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

@@ -105,36 +105,89 @@ article {
   background-color: white;
   margin-bottom: 15px;
   border-radius: 15px;
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  flex-direction: column;
-  height: auto;
   box-shadow: 0px 0px 3px 0px gray;
-  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+
+  &:hover {
+    width: 80%;
+    .animation_list {
+      display: flex;
+      width: 20%;
+    }
+  }
+}
+.content_list {
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  white-space: nowrap;
+  justify-content: space-between;
 }
 
 .title_list {
-  font-weight: 600;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 10px 10px 5px 10px;
 }
-
-.content_list {
+.information_list {
   display: flex;
+  width: 95%;
+  flex-direction: row;
   justify-content: space-between;
-  margin-left: 10px;
-  margin-right: 15px;
-  align-items: center;
+  margin: 5px 5px 10px 10px;
 }
-
 .description_plate {
   font-size: 14px;
+  color: #555151;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  margin-right: 10px;
 }
 .price {
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.animation_list {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #a3e3cb;
+  color: white;
+  width: 0%;
+  border-radius: 0px 15px 15px 0px;
+  font-size: 23px;
+  animation-name: check_information;
+  animation-direction: normal;
+  animation-duration: 1s;
+
+  i {
+    animation-name: turn_icon;
+    animation-direction: normal;
+    animation-duration: 1s;
+  }
+}
+
+@keyframes check_information {
+  from {
+    width: 0%;
+    margin-left: 100%;
+  }
+  to {
+    width: 20%;
+    margin-left: 0%;
+  }
+}
+
+@keyframes turn_icon {
+  0% {
+    transform: rotate(360deg);
+  }
 }
 
 form {

@@ -17,11 +17,22 @@ button {
 /*Presentation Welcome Page*/
 
 .title_page {
-  display: flex;
   height: 40px;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-right: 75px;
+
+  ul {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+  li {
+    list-style-type: none;
+  }
+}
+
+.second_part {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .arrow_presentation_welcome_page {
   text-decoration: none;
@@ -101,6 +112,38 @@ article {
   width: 95%;
   padding-left: 10px;
 }
+.menu_list:nth-child(1) {
+  animation: SlideUp 0.75s forwards ease;
+  animation-delay: 0.5s;
+}
+
+.menu_list:nth-child(2) {
+  animation: SlideUp 0.75s forwards ease;
+  animation-delay: 0.7s;
+}
+
+.menu_list:nth-child(3) {
+  animation: SlideUp 0.75s forwards ease;
+  animation-delay: 1s;
+}
+
+.menu_list:nth-child(4) {
+  animation: SlideUp 0.75s forwards ease;
+  animation-delay: 1s;
+}
+
+@keyframes SlideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .menu_list {
   background-color: white;
   margin-bottom: 15px;
@@ -111,6 +154,7 @@ article {
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  opacity: 0;
 
   &:hover {
     .animation_list {
@@ -119,10 +163,11 @@ article {
     }
   }
 }
+
 .content_list {
   display: flex;
-  width: 95%;
-  
+  width: 100%;
+
   flex-wrap: wrap;
   overflow: hidden;
   white-space: nowrap;
@@ -177,11 +222,9 @@ article {
 @keyframes check_information {
   from {
     width: 0%;
-   
   }
   to {
     width: 20%;
-    
   }
 }
 
@@ -282,15 +325,71 @@ footer {
 
   /* Footer*/
 
+  footer {
+    flex-wrap: wrap;
+    justify-content: initial;
+  }
+  .title_footer {
+    text-align: center;
+    width: 100%;
+  }
+  .content_footer {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .others_links {
+    display: flex;
+    width: 80%;
+    ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+    }
+    li {
+      margin-right: 15px;
+    }
+  }
+
   /* Footer End*/
 }
 /* screen >366px End*/
 
 /* screen >768px*/
 
+@media screen and (min-width: 565px) {
+  body {
+    width: 100%;
+  }
+  .flexible_restaurant_plate {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  article {
+    width: 75%;
+  }
+}
+
 @media screen and (min-width: 769px) {
   body {
     width: 100%;
+  }
+
+  .flexible_restaurant_plate {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  article {
+    width: 50%;
+  }
+  .article_title {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
   }
 }
 /* screen >768px End */
@@ -298,6 +397,9 @@ footer {
 @media screen and (min-width: 1281px) {
   body {
     width: 100%;
+  }
+  article {
+    width: 30%;
   }
 }
 

@@ -13,7 +13,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-size: large;
   -webkit-text-decoration: dashed;
-          text-decoration: dashed;
+  text-decoration: dashed;
 }
 
 /*Header*/
@@ -231,7 +231,7 @@ button {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
 }
 
@@ -263,7 +263,7 @@ transform: scale(1.08);
 .like_button i:hover {
   color: transparent;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   background-image: linear-gradient(#cc65af, #8a52ce);
   font-weight: bold;
   scale: 1.08;
@@ -430,4 +430,4 @@ footer {
     width: 100%;
   }
 }
-/*Footer*/ /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+/*Footer*/ /*# sourceMappingURL=style.css.map */ /*# sourceMappingURL=style.css.map */

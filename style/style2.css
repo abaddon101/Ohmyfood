@@ -1,9 +1,26 @@
+/*Code Plan*/
+/*
+1. Global setting L19-26
+2. Container L28-358
+  2.1 Header L38-84
+    2.1.1 Presentation Welcome Page L40-83
+  2.2 Presentation restaurant L86-356
+    2.2.1 Flexible Restaurant Plate L123-325
+      2.2.1.1 Animation list Slide L149-202
+      2.2.1.2 animation list Checked L263-323
+  2.2.2 Button Command L327-354
+3.Footer L360-405
+4.Media Queries L 40-516
+*/
+/*Code Plan End*/
+/*1. Global setting*/
 a,
 button {
   cursor: pointer;
 }
 
-/*Container*/
+/*1. Global setting End*/
+/*2. Container*/
 #container {
   width: 100%;
   font-family: "Roboto", sans-serif;
@@ -13,8 +30,8 @@ button {
   background-color: #f2f2f2;
 }
 
-/*Header*/
-/*Presentation Welcome Page*/
+/*2.1 Header*/
+/*2.1.1 Presentation Welcome Page*/
 .title_page {
   height: 40px;
 }
@@ -54,9 +71,9 @@ button {
   object-fit: cover;
 }
 
-/*Presentation Welcome Page End*/
-/*Header End*/
-/* Presentation_restaurant */
+/* 2.1.1 Presentation Welcome Page End*/
+/* 2.1 Header End*/
+/* 2.2 Presentation restaurant */
 .presentation_restaurant {
   margin-bottom: 25px;
   background: #f2f2f2;
@@ -91,6 +108,7 @@ button {
   transition: 1.5s;
 }
 
+/*2.2.1 Flexible Restaurant Plate*/
 article {
   width: 95%;
   display: flex;
@@ -114,6 +132,7 @@ article nav {
   padding-left: 10px;
 }
 
+/* 2.2.1.1 Animation list Slide*/
 .menu_list:nth-child(1) {
   -webkit-animation: SlideUp 0.75s forwards ease;
   animation: SlideUp 0.75s forwards ease;
@@ -152,7 +171,6 @@ article nav {
     opacity: 1;
   }
 }
-
 @keyframes SlideUp {
   from {
     transform: translateY(50px);
@@ -163,6 +181,7 @@ article nav {
     opacity: 1;
   }
 }
+/* 2.2.1.1 Animation list Slide End*/
 .menu_list {
   background-color: white;
   margin-bottom: 15px;
@@ -218,6 +237,7 @@ article nav {
   font-weight: 500;
 }
 
+/* 2.2.1.2 animation list Checked*/
 .animation_list {
   display: none;
   justify-content: center;
@@ -251,7 +271,6 @@ article nav {
     width: 20%;
   }
 }
-
 @keyframes check_information {
   from {
     width: 0%;
@@ -270,6 +289,9 @@ article nav {
     transform: rotate(360deg);
   }
 }
+/* 2.2.1.2 animation list Checked*/
+/*2.2.1 Flexible Restaurant Plate End*/
+/*Button Command*/
 form {
   display: flex;
   justify-content: center;
@@ -294,8 +316,9 @@ form button:focus {
   background: linear-gradient(#8a52ce, #cc65af);
 }
 
-/* Presentation_restaurant */
-/*Container End*/
+/*Button Command End*/
+/*2.2 Presentation restaurant End */
+/*2. Container End*/
 /*Footer*/
 footer {
   display: flex;
@@ -340,6 +363,7 @@ footer {
 }
 
 /*Footer End*/
+/*Media Queries*/
 /* screen >375px*/
 @media screen and (min-width: 500px) {
   body {
@@ -420,4 +444,4 @@ footer {
     width: 30%;
   }
 }
-/*Footer*/ /*# sourceMappingURL=style.css.map */ /*# sourceMappingURL=style2.css.map */
+/*Media Queries End*//*# sourceMappingURL=style2.css.map */

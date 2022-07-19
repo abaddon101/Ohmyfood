@@ -378,11 +378,11 @@ button {
   border-radius: 30px;
   background: linear-gradient(#9356dc, #ff79da);
   color: white;
-  box-shadow: 1px 1px 1px 1px gray;
+  box-shadow: 1px 1px 5px 1px gray;
 }
 
 #presentation_welcome_page button:hover {
-  transform: scale(1.08);
+  box-shadow: 5px 5px 15px 5px grey;
   transition: 0.5s;
 }
 

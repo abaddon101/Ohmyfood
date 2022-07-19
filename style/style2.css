@@ -305,12 +305,12 @@ form button {
   border-radius: 30px;
   background: linear-gradient(#9356dc, #ff79da);
   color: white;
-  box-shadow: 0px 1px 5px 0px gray;
+  box-shadow: 1px 1px 5px 1px gray;
 }
 form button:hover {
-  transform: scale(1.08);
   background: linear-gradient(#8a52ce, #cc65af);
-  box-shadow: 1px 1px 15px 1px gray;
+  box-shadow: 5px 5px 15px 5px grey;
+  transition: 0.5s;
 }
 form button:focus {
   background: linear-gradient(#8a52ce, #cc65af);

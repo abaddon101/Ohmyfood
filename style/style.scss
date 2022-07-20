@@ -382,12 +382,13 @@ button {
 }
 
 #presentation_welcome_page button:hover {
-  box-shadow: 5px 5px 15px 5px grey;
-  transition: 0.5s;
+  background: linear-gradient(#9244ff, #ff55cf);
+  box-shadow: 3px 3px 15px 3px grey;
+  transition: 0.4s;
 }
 
 #presentation_welcome_page button:focus {
-  background: linear-gradient(#8a52ce, #cc65af);
+  background: linear-gradient(#9244ff, #ff55cf);
 }
 
 .title {

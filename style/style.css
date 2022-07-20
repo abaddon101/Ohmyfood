@@ -1,17 +1,17 @@
 /*Code Plan*/
 /*
 1. Global setting L20-25
-2. Main L28-88
+2. Main L27-88
 3. Loading Spinner L90-355
   3.1 Page Spinner L92-163
   3.2 Spinner L165-353
-4. Container L 357-634
-  4.1 Header L365-445
-    4.1.1  Presentation Welcome Page L367-443
-  4.2 Menu L447-526
-  4.3 Flexible Welcome Page Restaurant Section L528-632
-5.Footer L636-681
-6.Media Queries L683-830
+4. Container L 357-773
+  4.1 Header L365-446
+    4.1.1  Presentation Welcome Page L367-444
+  4.2 Menu L448-527
+  4.3 Flexible Welcome Page Restaurant Section L529-771
+5.Footer L775-820
+6.Media Queries L822-969
 */
 /*Code Plan End*/
 /*1. Global setting */
@@ -582,13 +582,147 @@ button {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(#cc65af, #8a52ce);
+  background-image: linear-gradient(#9244ff, #ff55cf);
   font-weight: bold;
-  scale: 1.08;
-  transition: 1.5s;
+  -webkit-animation-name: like_grow;
+  animation-name: like_grow;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-iteration-count: initial;
+  animation-iteration-count: initial;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
 }
 
-/*4.3 Flexible Welcome Page Restaurant Section */
+@-webkit-keyframes like_grow {
+  0% {
+    transform: scale(0.25);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  25% {
+    transform: scale(0.5);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  50% {
+    transform: scale(0.75);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  75% {
+    transform: scale(1);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  80% {
+    transform: scale(1.15);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  90% {
+    transform: scale(1.05);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  100% {
+    transform: scale(1);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+}
+@keyframes like_grow {
+  0% {
+    transform: scale(0.25);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  25% {
+    transform: scale(0.5);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  50% {
+    transform: scale(0.75);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  75% {
+    transform: scale(1);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  80% {
+    transform: scale(1.15);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  90% {
+    transform: scale(1.05);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  100% {
+    transform: scale(1);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+}
+.like_button i:focus {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(#9244ff, #ff55cf);
+  font-weight: bold;
+  scale: 1.08;
+  transition: 1s;
+}
+
+/*4.3 Flexible Welcome Page Restaurant Section End */
 /* 4. Container End*/
 /*5. Footer*/
 footer {

@@ -2,16 +2,16 @@
 
 /*
 1. Global setting L19-26
-2. Container L28-358
+2. Container L28-495
   2.1 Header L38-84
     2.1.1 Presentation Welcome Page L40-83
-  2.2 Presentation restaurant L86-356
-    2.2.1 Flexible Restaurant Plate L123-325
-      2.2.1.1 Animation list Slide L149-202
-      2.2.1.2 animation list Checked L263-323
-  2.2.2 Button Command L327-354
-3.Footer L360-405
-4.Media Queries L 40-516
+  2.2 Presentation restaurant L86-493
+    2.2.1 Flexible Restaurant Plate L260-462
+      2.2.1.1 Animation list Slide L286-339
+      2.2.1.2 Animation list Checked L400-460
+  2.2.2 Button Command L464-491
+3.Footer L497-542
+4.Media Queries L 544-651
 */
 
 /*Code Plan End*/
@@ -114,10 +114,147 @@ button {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(#cc65af, #8a52ce);
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+    -webkit-animation-name: like_grow;
+    animation-name: like_grow;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-iteration-count: initial;
+    animation-iteration-count: initial;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+  }
+
+  i:focus {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
     font-weight: bold;
     scale: 1.08;
-    transition: 1.5s;
+  }
+}
+
+@-webkit-keyframes like_grow {
+  0% {
+    transform: scale(0.25);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  25% {
+    transform: scale(0.5);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  50% {
+    transform: scale(0.75);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  75% {
+    transform: scale(1);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+
+  80% {
+    transform: scale(1.15);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  90% {
+    transform: scale(1.05);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  100% {
+    transform: scale(1);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+}
+
+@keyframes like_grow {
+  0% {
+    transform: scale(0.25);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  25% {
+    transform: scale(0.5);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  50% {
+    transform: scale(0.75);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  75% {
+    transform: scale(1);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+
+  80% {
+    transform: scale(1.15);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  90% {
+    transform: scale(1.05);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
+  }
+  100% {
+    transform: scale(1);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(#9244ff, #ff55cf);
+    font-weight: bold;
   }
 }
 /*2.2.1 Flexible Restaurant Plate*/
@@ -260,7 +397,7 @@ article {
   font-weight: 500;
 }
 
-/* 2.2.1.2 animation list Checked*/
+/* 2.2.1.2 Animation list Checked*/
 
 .animation_list {
   display: none;
@@ -320,7 +457,7 @@ article {
   }
 }
 
-/* 2.2.1.2 animation list Checked*/
+/* 2.2.1.2 Animation list Checked*/
 
 /*2.2.1 Flexible Restaurant Plate End*/
 
